@@ -1,8 +1,9 @@
-a = int(input('a: '))
-b = int(input('b: '))
+a = int(input('введите число а- '))
+b = int(input('введите число б- '))
 
-if a / b == 0:
-        print('это  делится')
+if a % b == 0:
+        print('делится')
+        print( a // b)
 else:
-        print('такое уже не делится')
-        print(a / b)
+        print('не делится')
+        print(a % b)
