@@ -1,15 +1,17 @@
- a = int(input('введите а- '))
-    b = int(input('введите б- '))
-    c = int(input('введите с- '))
+import math
 
-    d = (b**2) - (4*a*c)
+a = int(input('введите а- '))
+b = int(input('введите б- '))
+c = int(input('введите с- '))
 
-    if d < 0:
+d = (b**2) - (4*a*c)
+
+if d < 0:
         print('no results')
-    elif d == 0:
+elif d == 0:
         x = round((-b) / (2*a), 2)
         print(f'x = {x}')
-    else:
+else:
         x1 = round((-b + math.sqrt(d)) / (2*a), 2)
         x2 = round((-b - math.sqrt(d)) / (2*a), 2)
 
